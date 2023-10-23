@@ -1,9 +1,11 @@
+import Nav from "./components/Nav";
+import "./styles/nav.css"
 
 function App() {
  
   return(
     <>
-    <p className="text-blue-500 text-3xl">Hello world</p>
+      <Nav />
     </>
   )
 }

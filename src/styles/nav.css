@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.menu-btn {
+    @apply relative -right-6 -top-1.5 flex justify-center items-center w-7 h-10 cursor-pointer;
+  
+    transition: all .5s ease-in-out;
+  
+  }
+  
+  .menu-btn-burger{
+    @apply w-7 h-1 bg-gray-900 rounded-md cursor-pointer;
+    transition: all .5s ease-in-out;
+  }
+  
+  .menu-btn-burger::before,
+  .menu-btn-burger::after {
+    @apply absolute w-7 h-1 bg-gray-900 rounded-md;
+    content: "";
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .menu-btn-burger::before{
+    transform: translateY(-10px);
+  }
+  
+  .menu-btn-burger::after{
+    transform: translateY(10px);
+  }
+  
+  .menu-btn.active .menu-btn-burger{
+    background: transparent;
+  }
+  
+  .menu-btn.active .menu-btn-burger::before {
+    transform: rotate(45deg) ;
+    }
+    
+  .menu-btn.active .menu-btn-burger::after {
+    transform: rotate(-45deg) ;
+    }
+  
+  
+  .menu-btn:hover .menu-btn-burger::before, 
+  .menu-btn:hover .menu-btn-burger::after{
+    @apply   cursor-pointer
+  }
+
+  .sliding-menu {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .active .sliding-menu {
+    transform: translateX(0);
+  }
+
+  
