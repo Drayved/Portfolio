@@ -12,6 +12,7 @@ const Hero = () => {
                         I transform web designs into seamless, user-friendly experiences.
                         Let's create something remarkable together.
                     </p>
+
                     <div className="flex gap-5 mt-5">
                         <a  href="https://www.linkedin.com/in/david-riley-dev/">
                             <img className="w-8" src="/images/linkedin.svg" alt="" />
@@ -21,8 +22,9 @@ const Hero = () => {
                         </a>
                     </div>
                 </div>
+
                 <div>
-                    <img className="w-72 rounded-full h-72 ml-20" src="/images/davids-pic.jpg" alt="" />
+                    <img className="w-96 rounded-full h-96 ml-20" src="/images/davids-pic.jpg" alt="" />
                 </div>
             </div>
            
