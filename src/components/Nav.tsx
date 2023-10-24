@@ -30,7 +30,7 @@ const Nav = () => {
 
     return(
         <div className="flex justify-between border-b">
-            <h3 className="p-6 font-bold text-gray-700 text-lg">David.Riley.Dev@gmail.com</h3>
+            <h3 className="p-6 font-bold text-gray-100 text-lg">David.Riley.Dev@gmail.com</h3>
             {window.innerWidth < 1024 ? (
                 <>
                     <div className="absolute top-6 right-9 mr-10 z-50">
@@ -40,7 +40,7 @@ const Nav = () => {
                     </div>
 
                     <div onClick={toggleMenu} className={`${showMenu ? "active" : ""}`}>
-                        <div className="sliding-menu absolute right-0 flex justify-center items-center w-screen h-screen bg-gray-100">
+                        <div className="sliding-menu absolute right-0 flex justify-center items-center w-screen h-screen bg-[#121212] z-40">
                             {navElements}
                         </div>
                     </div>

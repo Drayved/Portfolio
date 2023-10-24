@@ -1,0 +1,67 @@
+.image-container {
+    border-radius: 50%; /* Create a circular border */
+    animation: borderRadiusAnimation 20s infinite;
+}
+
+.image {
+    overflow: hidden;
+    animation: borderRadiusAnimation 20s infinite;
+    border: 3px solid white;
+    max-height: 20rem;
+}
+
+
+@keyframes borderRadiusAnimation {
+    0% {
+        border-radius: 50% 70% 70% 50%;
+    }
+    12.5% {
+        border-radius: 50% 60% 50% 50%;
+    }
+    25% {
+        border-radius: 50% 50% 40% 50%;
+    }
+    37.5% {
+        border-radius: 50% 40% 30% 50%;
+    }
+    50% {
+        border-radius: 50% 45% 35% 50%;
+    }
+    62.5% {
+        border-radius: 50% 50% 40% 50%;
+    }
+    75% {
+        border-radius: 50% 60% 50% 50%;
+    }
+    87.5% {
+        border-radius: 50% 70% 60% 50%;
+    }
+    100% {
+        border-radius: 50% 70% 70% 50%;
+    }
+}
+
+.image-container {
+    position: relative;
+    cursor: pointer;
+   
+}
+
+.tag {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white; 
+    padding: 5px; 
+    border-radius: 5px; 
+    top: -30px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    opacity: 0; 
+    transition: opacity 0.3s; 
+}
+
+.image-container:hover .tag {
+    opacity: 1; 
+}
+
+

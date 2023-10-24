@@ -11,13 +11,13 @@
   }
   
   .menu-btn-burger{
-    @apply w-7 h-1 bg-gray-900 rounded-md cursor-pointer;
+    @apply w-7 h-1  rounded-md cursor-pointer bg-white;
     transition: all .5s ease-in-out;
   }
   
   .menu-btn-burger::before,
   .menu-btn-burger::after {
-    @apply absolute w-7 h-1 bg-gray-900 rounded-md;
+    @apply absolute w-7 h-1 rounded-md bg-white;
     content: "";
     transition: all 0.5s ease-in-out;
   }
