@@ -1,0 +1,13 @@
+.project-image-container {
+    background-image: url('/images/gamesaver.png');
+    background-size: cover;
+    background-position: top;
+    background-color: black;
+    
+  }
+
+  .project-image-container:hover{
+    background-position: bottom;
+    transition: ease-in-out 3s;
+  }
+  

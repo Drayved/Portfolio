@@ -2,7 +2,7 @@
 
 const Hero = () => {
     return (
-        <div className="flex flex-wrap flex-col md:items-center justify-center md:mt-52 w-[99%] mx-auto">
+        <section className="flex flex-wrap flex-col md:items-center justify-center mt-28 md:mt-80 w-[99%] mx-auto">
             <div className=" md:flex">
                 <div className="image-container flex justify-center my-10">
                     <div className="border-container ">
@@ -11,7 +11,7 @@ const Hero = () => {
                     
                 </div>
                 <div className="ml-10">
-                    <h1 className="gray-600 font-semibold">Hi, my name is</h1>
+                    <h1 className="text-gray-500 font-semibold">Hi, my name is</h1>
                     <h1 className="text-5xl mt-2 font-semibold">David Riley</h1>
                     <h2 className="text-5xl mt-2 text-gray-400 font-semibold">Front-End Developer</h2>
                     <p className="max-w-20 md:w-96 mt-4 text-gray-500 flex">
@@ -20,10 +20,10 @@ const Hero = () => {
                     </p>
 
                     <div className="flex gap-5 mt-5">
-                        <a  href="https://www.linkedin.com/in/david-riley-dev/">
+                        <a className="hover:scale-110" href="https://www.linkedin.com/in/david-riley-dev/">
                             <img className="w-8" src="/images/linkedin.svg" alt="" />
                         </a>
-                        <a href="https://github.com/Drayved">
+                        <a className="hover:scale-110" href="https://github.com/Drayved">
                             <img className="w-8" src="/images/github.svg" alt="" />
                         </a>
                     </div>
@@ -32,8 +32,8 @@ const Hero = () => {
 
             </div>
            
-            <div className="flex mt-16 flex-wrap">
-                <h4 className="mt-2 text-lg font-bold pr-5">Tech Stack <span className="text-xl ml-4">|</span></h4>
+            <div className="flex flex-col md:flex-row mt-16 flex-wrap px-10 mx-auto">
+                <h4 className="flex mx-auto mt-2 text-lg font-bold pl-4 pr-5 border-b pb-1 mb-4 md:border-none md:pb-0 md:mb-0">Tech Stack <span className="text-xl -mt-0.5 ml-4 hidden md:flex">|</span></h4>
                 <div className="flex flex-wrap justify-start gap-2">
                     <div className="image-container">
                         <img className="hover:scale-110" src="/images/html.png" alt="HTML" />
@@ -76,7 +76,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

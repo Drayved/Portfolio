@@ -29,7 +29,7 @@ const Nav = () => {
       );
 
     return(
-        <div className="flex justify-between border-b">
+        <header className="flex justify-between border-b">
             <h3 className="p-6 font-bold text-gray-100 text-lg">David.Riley.Dev@gmail.com</h3>
             {window.innerWidth < 1024 ? (
                 <>
@@ -51,7 +51,7 @@ const Nav = () => {
                 </div>
             )}
             
-        </div>
+        </header>
     )
 }
 
