@@ -1,13 +1,44 @@
 .project-image-container {
+    background-image: url('/images/car-rental.png');
+    background-size: cover;
+    background-position: top;
+    background-color: black;
+  }
+
+  .project-image-container-2 {
     background-image: url('/images/gamesaver.png');
     background-size: cover;
     background-position: top;
     background-color: black;
-    
   }
 
-  .project-image-container:hover{
+  .project-image-container-2:hover{
+    background-image: url('/images/gamesaver-2.png');
+    transition: ease-in-out 2s;
+  }
+
+  .project-image-container-3 {
+    background-image: url('/images/tint-site.png');
+    background-size: cover;
+    background-position: top;
+    background-color: black;
+  }
+
+  .project-image-container-4 {
+    background-image: url('/images/skyfall.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+  }
+
+  .project-image-container-4:hover{
+    background-image: url('/images/skyfall-2.jpg');
+    transition: ease-in-out 1s;
+  }
+
+  .project-image-container:hover,
+  .project-image-container-3:hover{
     background-position: bottom;
-    transition: ease-in-out 3s;
+    transition: ease-in-out 10s;
   }
   
