@@ -42,3 +42,21 @@
     transition: ease-in-out 10s;
   }
   
+  .visit-site {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff; /* Text color */
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right, cyan 10%, #121212 50%); 
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background 0.7s;
+  }
+  
+
+  .visit-site:hover {
+    background-position: 0 0;
+  }
+  

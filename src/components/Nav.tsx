@@ -30,7 +30,7 @@ const Nav = () => {
 
     return(
         <header className="flex justify-between border-b">
-            <h3 className="p-6 font-bold text-gray-100 text-lg">David.Riley.Dev@gmail.com</h3>
+            <h3 className="p-6 font-bold text-gray-100 text-lg hover:text-cyan-500 cursor-pointer">David.Riley.Dev@gmail.com</h3>
             {window.innerWidth < 1024 ? (
                 <>
                     <div className="absolute top-6 right-9 mr-10 z-50">

@@ -4,17 +4,17 @@ const Projects = () => {
 
     return (
         <section className="w-full xl:w-[90%] flex flex-col items-center mx-auto mt-52">
-            <h1 className="text-2xl font-semibold">PROJECTS</h1>
+            <h1 className="text-2xl text-cyan-500 font-semibold">PROJECTS</h1>
             {/* First card */}
-            <div className="mt-10 shadow p-5 rounded-2xl  max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] lg:flex mx-auto">
+            <div className="mt-10 shadow p-5 rounded-2xl  max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto">
 
-                <div className={`project-image-container lg:min-w-[550px]  h-[25rem]  mx-auto lg:h-auto`}>
+                <div className={`project-image-container xl:min-w-[550px]  h-[25rem]  mx-auto xl:h-auto`}>
                     <div className="overlay bg-[#121212] opacity-30 hover:opacity-20 w-full h-full"></div>
                 </div>
                     
                 <div className="flex flex-col md:ml-6">
                     <h1 className="mt-5 font-semibold text-xl">Car Rental</h1>
-                    <p className="mt-5 text-lg text-gray-400"> 
+                    <p className="mt-5 text-xl text-gray-400"> 
                         This project is a template for a car rental website, showcasing the 
                         integration of various technologies and functionalities. Users can register
                         and log in using Firebase authentication, browse available cars, view car 
@@ -23,7 +23,7 @@ const Projects = () => {
                         designed to serve as a starting point for real-world projects.
                     </p>
                     
-                        <ul className="text-gray-300 lg:justify-start flex flex-wrap gap-5 mt-5 justify-center font-semibold">
+                        <ul className="text-gray-300 xl:justify-start flex flex-wrap gap-5 mt-5 justify-center font-semibold">
                             <li>React</li>
                             <li>TypeScript</li>
                             <li>Tailwind CSS</li>
@@ -31,12 +31,12 @@ const Projects = () => {
                         </ul>
                     
                     <div className="flex gap-8 py-2 mt-3 justify-center ">
-                        <a className="mt-1" href="https://davids-car-rental.netlify.app" target="_blank">
+                        <a className="visit-site" href="https://davids-car-rental.netlify.app" target="_blank">
                             Visit Site <span>&rarr;</span>
                         </a>
 
                         <a href="https://github.com/Drayved/Car-Rental-Site" title="View Source Code" target="_blank">
-                            <img className="w-8" src="./images/github.svg"  title="View Source Code" alt="GitHub" />
+                            <img className="w-8 mt-1 hover:scale-110" src="./images/github.svg"  title="View Source Code" alt="GitHub" />
                         </a>
                     </div>
                 
@@ -44,15 +44,15 @@ const Projects = () => {
             </div>
 
             {/* Second card */}
-            <div className="mt-10 shadow p-5 rounded-2xl  max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] lg:flex mx-auto">
+            <div className="mt-10 shadow p-5 rounded-2xl  max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto">
 
-            <div className={`project-image-container-2 lg:min-w-[550px]  h-[25rem] order-2 mx-auto lg:h-auto`}>
+            <div className={`project-image-container-2 xl:min-w-[550px]  h-[25rem] order-2 mx-auto xl:h-auto`}>
                     <div className="overlay bg-[#121212] opacity-30 hover:opacity-20 w-full h-full"></div>
             </div>
                 
             <div className="flex flex-col md:ml-6 order-1">
                 <h1 className="mt-5 font-semibold text-xl">GameSaver</h1>
-                <p className="mt-5 text-lg text-gray-400"> 
+                <p className="mt-5 text-xl text-gray-400"> 
                     An app to find games you want to play or games you've played and keep track of them in 2 different list.
                     Game you want to play and games you have played. Utlizes the RAWR API for all game data.
                     Users are able to create an account and access their list on any device. Utlizies firebase database
@@ -60,7 +60,7 @@ const Projects = () => {
                     to scroll. Uses a serverless function to hide API key.
                 </p>
                 
-                    <ul className="text-gray-300 lg:justify-start flex flex-wrap gap-5 mt-5 justify-center font-semibold">
+                    <ul className="text-gray-300 xl:justify-start flex flex-wrap gap-5 mt-5 justify-center font-semibold">
                         <li>React</li>
                         <li>JavaScript</li>
                         <li>Tailwind CSS</li>
@@ -68,12 +68,12 @@ const Projects = () => {
                     </ul>
                 
                 <div className="flex gap-8 py-2 mt-3 justify-center ">
-                    <a className="mt-1" href="https://davids-gamesaver.netlify.app" target="_blank">
+                    <a className="visit-site" href="https://davids-gamesaver.netlify.app" target="_blank">
                         Visit Site <span>&rarr;</span>
                     </a>
 
                     <a href="https://github.com/Drayved/GameSaver" title="View Source Code" target="_blank">
-                        <img className="w-8" src="./images/github.svg"  title="View Source Code" alt="GitHub" />
+                        <img className="w-8 mt-1 hover:scale-110" src="./images/github.svg"  title="View Source Code" alt="GitHub" />
                     </a>
                 </div>
 
@@ -84,15 +84,15 @@ const Projects = () => {
 
             {/* Third card */}
 
-            <div className="mt-10 shadow p-5 rounded-2xl  max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] lg:flex mx-auto">
+            <div className="mt-10 shadow p-5 rounded-2xl  max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto">
 
-                <div className={`project-image-container-3 lg:min-w-[550px]  h-[25rem]  mx-auto lg:h-auto`}>
+                <div className={`project-image-container-3 xl:min-w-[550px]  h-[25rem]  mx-auto xl:h-auto`}>
                     <div className="overlay bg-[#121212] opacity-30 hover:opacity-20 w-full h-full"></div>
                 </div>
                     
                 <div className="flex flex-col md:ml-6">
                     <h1 className="mt-5 font-semibold text-xl">Tint Site</h1>
-                    <p className="mt-5 text-lg text-gray-400"> 
+                    <p className="mt-5 text-xl text-gray-400"> 
                         Tint Site is a web application created as a pitch for a tinting 
                         business. Although it was not ultimately used by the intended owner 
                         due to franchise requirements, the site showcases a professional 
@@ -102,7 +102,7 @@ const Projects = () => {
                         Modern design that would enhance any business. 
                     </p>
                     
-                        <ul className="text-gray-300 lg:justify-start flex flex-wrap gap-5 mt-5 justify-center font-semibold">
+                        <ul className="text-gray-300 xl:justify-start flex flex-wrap gap-5 mt-5 justify-center font-semibold">
                             <li>React</li>
                             <li>JavaScript</li>
                             <li>Tailwind CSS</li>
@@ -110,12 +110,12 @@ const Projects = () => {
                         </ul>
                     
                     <div className="flex gap-8 py-2 mt-3 justify-center ">
-                        <a className="mt-1" href="https://davids-tint-site.netlify.app/" target="_blank">
+                        <a className="visit-site" href="https://davids-tint-site.netlify.app/" target="_blank">
                             Visit Site <span>&rarr;</span>
                         </a>
 
                         <a href="https://github.com/Drayved/Tint-Site" title="View Source Code" target="_blank">
-                            <img className="w-8" src="./images/github.svg"  title="View Source Code" alt="GitHub" />
+                            <img className="w-8 mt-1 hover:scale-110" src="./images/github.svg"  title="View Source Code" alt="GitHub" />
                         </a>
                     </div>
 
@@ -124,16 +124,16 @@ const Projects = () => {
 
             {/* fourth card */}
 
-            <div className="mt-10 shadow p-5 rounded-2xl  max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] lg:flex mx-auto">
+            <div className="mt-10 shadow p-5 rounded-2xl  max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto">
             
-            <div className={`project-image-container-4 lg:min-w-[550px]  h-[25rem] order-2  mx-auto lg:h-auto`}>
+            <div className={`project-image-container-4 xl:min-w-[550px]  h-[25rem] order-2  mx-auto xl:h-auto`}>
                 <div className="overlay bg-[#121212] opacity-30 hover:opacity-20 w-full h-full"></div>
             </div>
 
         
                 <div className="flex flex-col  md:ml-6 order-1">
                     <h1 className="mt-5 font-semibold text-xl">SkyFall</h1>
-                    <p className="mt-5 text-lg text-gray-400"> 
+                    <p className="mt-5 text-xl text-gray-400"> 
                     Team project that we built during a voyage with Chingu. Team consisted of 3 developers and a
                     designer.
                     Pulls meteorite strike data from a Nasa API. Search by name, year, mass, or composition.
@@ -144,7 +144,7 @@ const Projects = () => {
                     The team used the Agile/Scrum method, Tailwind, React, Javascript, and Figma
                     </p>
                     
-                        <ul className="text-gray-300 lg:justify-start flex flex-wrap gap-5 mt-5 justify-center font-semibold">
+                        <ul className="text-gray-300 xl:justify-start flex flex-wrap gap-5 mt-5 justify-center font-semibold">
                             <li>React</li>
                             <li>JavaScript</li>
                             <li>Tailwind CSS</li>
@@ -152,12 +152,12 @@ const Projects = () => {
                         </ul>
                     
                     <div className="flex gap-8 py-2 mt-3 justify-center ">
-                        <a className="mt-1" href="https://team27-skyfall.netlify.app/" target="_blank">
+                        <a className="visit-site" href="https://team27-skyfall.netlify.app/" target="_blank">
                             Visit Site <span>&rarr;</span>
                         </a>
 
                         <a href="https://github.com/chingu-voyages/v45-tier2-team-27" title="View Source Code" target="_blank">
-                            <img className="w-8" src="./images/github.svg"  title="View Source Code" alt="GitHub" />
+                            <img className="w-8 mt-1 hover:scale-110" src="./images/github.svg"  title="View Source Code" alt="GitHub" />
                         </a>
                     </div>
 

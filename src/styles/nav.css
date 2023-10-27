@@ -4,20 +4,20 @@
 
 
 .menu-btn {
-    @apply relative -right-6 -top-1.5 flex justify-center items-center w-7 h-10 cursor-pointer;
+    @apply relative -right-6 -top-1.5 flex justify-center items-center w-7 h-10 cursor-pointer ;
   
     transition: all .5s ease-in-out;
   
   }
   
   .menu-btn-burger{
-    @apply w-7 h-1  rounded-md cursor-pointer bg-white;
+    @apply w-7 h-1  rounded-md cursor-pointer bg-white hover:bg-cyan-500;
     transition: all .5s ease-in-out;
   }
   
   .menu-btn-burger::before,
   .menu-btn-burger::after {
-    @apply absolute w-7 h-1 rounded-md bg-white;
+    @apply absolute w-7 h-1 rounded-md bg-white hover:bg-cyan-500;
     content: "";
     transition: all 0.5s ease-in-out;
   }
