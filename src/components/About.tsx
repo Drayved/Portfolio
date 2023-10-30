@@ -3,7 +3,7 @@
 const About = () => {
 
     return(
-        <section className="flex flex-col lg:flex-row mt-[26rem] items-center justify-center w-[90%] max-w-[1150px] mx-auto">
+        <section className="flex flex-col lg:flex-row mt-[28rem] items-center justify-center w-[90%] max-w-[1150px] mx-auto">
             <div className="lg:max-w-[500px] mx-auto text-lg">
                 <h1 className="text-2xl font-semibold text-cyan-500 text-center">ABOUT ME</h1>
                 <p className="mt-5 text-gray-400">

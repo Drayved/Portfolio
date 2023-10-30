@@ -8,7 +8,7 @@ const Projects = () => {
             {/* First card */}
             <div className="mt-10 shadow p-5 rounded-2xl  max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto">
 
-                <div className={`project-image-container xl:min-w-[550px]  h-[25rem]  mx-auto xl:h-auto`}>
+                <div className={`project-image-container xl:min-w-[550px] rounded-lg h-[25rem]  mx-auto xl:h-auto`}>
                     <div className="overlay bg-[#121212] opacity-30 hover:opacity-20 w-full h-full"></div>
                 </div>
                     
@@ -46,7 +46,7 @@ const Projects = () => {
             {/* Second card */}
             <div className="mt-10 shadow p-5 rounded-2xl  max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto">
 
-            <div className={`project-image-container-2 xl:min-w-[550px]  h-[25rem] order-2 mx-auto xl:h-auto`}>
+            <div className={`project-image-container-2 xl:min-w-[550px] rounded-lg h-[25rem] order-2 mx-auto xl:h-auto`}>
                     <div className="overlay bg-[#121212] opacity-30 hover:opacity-20 w-full h-full"></div>
             </div>
                 
@@ -86,7 +86,7 @@ const Projects = () => {
 
             <div className="mt-10 shadow p-5 rounded-2xl  max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto">
 
-                <div className={`project-image-container-3 xl:min-w-[550px]  h-[25rem]  mx-auto xl:h-auto`}>
+                <div className={`project-image-container-3 xl:min-w-[550px] rounded-lg h-[25rem]  mx-auto xl:h-auto`}>
                     <div className="overlay bg-[#121212] opacity-30 hover:opacity-20 w-full h-full"></div>
                 </div>
                     
@@ -126,7 +126,7 @@ const Projects = () => {
 
             <div className="mt-10 shadow p-5 rounded-2xl  max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto">
             
-            <div className={`project-image-container-4 xl:min-w-[550px]  h-[25rem] order-2  mx-auto xl:h-auto`}>
+            <div className={`project-image-container-4 xl:min-w-[550px] rounded-lg  h-[25rem] order-2  mx-auto xl:h-auto`}>
                 <div className="overlay bg-[#121212] opacity-30 hover:opacity-20 w-full h-full"></div>
             </div>
 
@@ -160,13 +160,8 @@ const Projects = () => {
                             <img className="w-8 mt-1 hover:scale-110" src="./images/github.svg"  title="View Source Code" alt="GitHub" />
                         </a>
                     </div>
-
                 </div>
-
-                
-
             </div>
-            
         </section>
     )
 }
