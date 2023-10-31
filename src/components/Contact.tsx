@@ -1,9 +1,13 @@
-
+import { useInView } from 'react-intersection-observer';
 
 const Contact = () => {
 
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+      });
+
     return(
-        <div className="mt-32 px-5 w-full flex flex-col items-center">
+        <section id='contact' ref={ref} className={`section mt-32 px-5 w-full flex flex-col items-center ${inView ? 'visible' : ''}`}>
             <div>
                 <h1 className="text-4xl text-cyan-500 text-center">Get In Touch</h1>
                 <p className="mt-10 max-w-[1200px] lg:text-center">
@@ -13,11 +17,11 @@ const Contact = () => {
                     I'm really excited to hear from you and help you out!
                 </p>
                 <div className="flex justify-center">
-                    <button className="mt-10 border p-5 hover:border-cyan-500 mx-auto">David.Riley.Dev@gmail.com</button>
+                    <a href="mailto:David.Riley.Dev@gmail.com" className="mt-10 border p-5 hover:border-cyan-500 mx-auto">David.Riley.Dev@gmail.com</a>
                 </div>
                 
             </div>
-        </div>
+        </section>
     )
 }
 

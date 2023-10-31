@@ -1,15 +1,20 @@
-
+import { useInView } from 'react-intersection-observer';
 
 const Projects = () => {
 
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+      });
+
+
     return (
-        <section className="w-full xl:w-[90%] flex flex-col items-center mx-auto mt-52">
+        <section id="projects" ref={ref} className={`section w-full xl:w-[90%] flex flex-col items-center mx-auto mt-52 ${inView ? 'visible' : ''}`}>
             <h1 className="text-2xl text-cyan-500 font-semibold">PROJECTS</h1>
             {/* First card */}
             <div className="mt-10 shadow p-5 rounded-2xl  max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto">
 
                 <div className={`project-image-container xl:min-w-[550px] rounded-lg h-[25rem]  mx-auto xl:h-auto`}>
-                    <div className="overlay bg-[#121212] opacity-30 hover:opacity-20 w-full h-full"></div>
+                    <div className="overlay bg-[#121212] opacity-20 hover:opacity-0 w-full h-full"></div>
                 </div>
                     
                 <div className="flex flex-col md:ml-6">
@@ -47,7 +52,7 @@ const Projects = () => {
             <div className="mt-10 shadow p-5 rounded-2xl  max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto">
 
             <div className={`project-image-container-2 xl:min-w-[550px] rounded-lg h-[25rem] order-2 mx-auto xl:h-auto`}>
-                    <div className="overlay bg-[#121212] opacity-30 hover:opacity-20 w-full h-full"></div>
+                    <div className="overlay bg-[#121212] opacity-20 hover:opacity-0 w-full h-full"></div>
             </div>
                 
             <div className="flex flex-col md:ml-6 order-1">
@@ -87,7 +92,7 @@ const Projects = () => {
             <div className="mt-10 shadow p-5 rounded-2xl  max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto">
 
                 <div className={`project-image-container-3 xl:min-w-[550px] rounded-lg h-[25rem]  mx-auto xl:h-auto`}>
-                    <div className="overlay bg-[#121212] opacity-30 hover:opacity-20 w-full h-full"></div>
+                    <div className="overlay bg-[#121212] opacity-20 hover:opacity-0 w-full h-full"></div>
                 </div>
                     
                 <div className="flex flex-col md:ml-6">
@@ -127,7 +132,7 @@ const Projects = () => {
             <div className="mt-10 shadow p-5 rounded-2xl  max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto">
             
             <div className={`project-image-container-4 xl:min-w-[550px] rounded-lg  h-[25rem] order-2  mx-auto xl:h-auto`}>
-                <div className="overlay bg-[#121212] opacity-30 hover:opacity-20 w-full h-full"></div>
+                <div className="overlay bg-[#121212] opacity-20 hover:opacity-0 w-full h-full"></div>
             </div>
 
         
