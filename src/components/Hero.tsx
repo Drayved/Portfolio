@@ -1,8 +1,14 @@
-
+import { useInView } from 'react-intersection-observer';
 
 const Hero = () => {
+
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+      });
+
+
     return (
-        <section className="flex flex-wrap flex-col md:items-center justify-center mt-5 md:mt-60 2xl:mt-96 w-[99%] mx-auto">
+        <section ref={ref} className={`hero flex flex-wrap flex-col md:items-center justify-center mt-5 md:mt-60 2xl:mt-96 w-[99%] mx-auto ${inView ? 'visible' : ''}`}>
                 <div className=" md:flex">
                     <div className="image-container flex justify-center my-10">
                         <div className="border-container ">

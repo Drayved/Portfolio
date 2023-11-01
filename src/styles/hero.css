@@ -10,6 +10,11 @@
     max-height: 20rem;
 }
 
+.hero {
+    opacity: 0;
+    transition: opacity 3s ease-in-out; /* You can adjust the duration and easing function */
+  }
+
 
 @keyframes borderRadiusAnimation {
     0% {

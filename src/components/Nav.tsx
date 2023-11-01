@@ -1,100 +1,116 @@
 import { useEffect, useState } from "react";
 
 const Nav = () => {
-    const [showMenu, setShowMenu] = useState(window.innerWidth >= 1024);
-    const [showScrollButton, setShowScrollButton] = useState(false)
+  const [showMenuSmall, setShowMenuSmall] = useState(window.innerWidth >= 1024);
+  const [showMenu, setShowMenu] = useState(false)
+  const [showScrollButton, setShowScrollButton] = useState(false);
 
-    const scrollToSection = (event: React.MouseEvent, sectionId: string) => {
-        event.preventDefault();
-        const section = document.querySelector(sectionId);
-        if (section) {
-          section.scrollIntoView({
-            behavior: 'smooth',
-          });
-        }
-      };
-
-    useEffect(() => {
-        const handleResize = () => {
-          setShowMenu(window.innerWidth >= 1024)
-        };
-
-        const handleScroll = () => {
-            setShowScrollButton(window.scrollY > 200)
-          };
-    
-        window.addEventListener("resize", handleResize)
-        window.addEventListener("scroll", handleScroll)
-    
-        return () => {
-          window.removeEventListener("resize", handleResize)
-          window.removeEventListener("scroll", handleScroll)
-        };
-      }, []);
-
-      const toggleMenu = () => {
-        setShowMenu(!showMenu)
-
-        if (!showMenu) {
-            document.body.classList.add("no-scroll");
-          } else {
-            document.body.classList.remove("no-scroll");
-          }
+  const scrollToSection = (event: React.MouseEvent, sectionId: string) => {
+    event.preventDefault();
+    const section = document.querySelector(sectionId);
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth',
+      });
     }
+  };
 
-    const navElements = (
-        <ul className={`p-6 font-semibold  ${window.innerWidth < 1024 ? 'flex-col flex gap-10 mb-10 text-2xl' : 'flex flex-row gap-6 text-lg'}`}>
-          <li className="cursor-pointer hover:text-cyan-500">
-            <a href="#home" onClick={() => window.scrollTo({top: 0, behavior: 'smooth',})}>Home</a>
-        </li>
-          <li className="cursor-pointer hover:text-cyan-500">
-            <a href="#about" onClick={(e) => scrollToSection(e, "#about")}>About</a>
-        </li>
-          <li className="cursor-pointer hover:text-cyan-500">
-            <a href="#projects" onClick={(e) => scrollToSection(e, "#projects")}>Projects</a>
-        </li>
-          <li className="cursor-pointer hover:text-cyan-500">
-            <a href="#contact" onClick={(e) => scrollToSection(e, "#contact")}>Contact</a>
-        </li>
-        </ul>
-      );
+  useEffect(() => {
+    const handleResize = () => {
+      setShowMenuSmall(window.innerWidth >= 1024);
+    };
 
-    return(
-        <header id="home" className="flex justify-between border-b">
-            <a href="mailto:David.Riley.Dev@gmail.com" className="p-6 font-bold text-gray-100 sm:text-lg hover:text-cyan-500 cursor-pointer text-sm">
-                David.Riley.Dev@gmail.com
-            </a>
-            
-            {showScrollButton && (
-                        <div className="fixed top-6 right-9 mr-10 z-50">
-                            <div className={`menu-btn ${showMenu ? "active" : ""}`} onClick={toggleMenu}>
-                                <div className="menu-btn-burger"></div>
-                            </div>
-                        </div>
-                    )}
-                    
-            {window.innerWidth < 1024 ? (
-                <>
-                    <div className="absolute top-6 right-9 mr-10 z-50">
-                        <div className={`menu-btn ${showMenu ? "active" : ""}`} onClick={toggleMenu}>
-                            <div className="menu-btn-burger"></div>
-                        </div>
-                    </div>
+    const handleScroll = () => {
+      setShowScrollButton(window.scrollY > 200);
+    };
 
-                    <div onClick={toggleMenu} className={`${showMenu ? "active" : ""}`}>
-                        <div className="sliding-menu fixed right-0 flex justify-center items-center w-screen h-screen bg-[#121212] z-40">
-                            {navElements}
-                        </div>
-                    </div>
-                </>
-            ) : (
-                <div>
-                    {navElements}
-                </div>
-            )}
-            
-        </header>
-    )
-}
+    window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
 
-export default Nav
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const toggleMenu = () => {
+    setShowMenuSmall(!showMenuSmall);
+    setShowMenu(!showMenu)
+
+    if (!showMenu) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  };
+
+  const navElements = (
+    <ul className={`p-6 font-semibold ${showMenuSmall || showMenu ? 'flex flex-row gap-6 text-lg' : 'hidden'} ${window.innerWidth < 1024 || showMenu ? 'flex-col flex gap-10 mb-10 text-2xl' : ''}`}>
+      <li className="cursor-pointer hover:text-cyan-500">
+        <a href="#home" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</a>
+      </li>
+      <li className="cursor-pointer hover:text-cyan-500">
+        <a href="#about" onClick={(e) => scrollToSection(e, "#about")}>About</a>
+      </li>
+      <li className="cursor-pointer hover:text-cyan-500">
+        <a href="#projects" onClick={(e) => scrollToSection(e, "#projects")}>Projects</a>
+      </li>
+      <li className="cursor-pointer hover:text-cyan-500">
+        <a href="#contact" onClick={(e) => scrollToSection(e, "#contact")}>Contact</a>
+      </li>
+      <li className="cursor-pointer hover:text-cyan-500">
+        <a href="https://docs.google.com/document/d/1K-TI-o4oTf1njuind_5i-n4trzjysyPxSXZN1UVnSz4/edit?usp=sharing" target="_blank">Resume</a>
+      </li>
+    </ul>
+  );
+
+  return (
+    <header id="home" className="flex justify-between border-b">
+      <a href="mailto:David.Riley.Dev@gmail.com" className="p-6 font-bold text-gray-100 sm:text-lg hover:text-cyan-500 cursor-pointer text-sm">
+        <div className="flex text-lg">
+          <img className="w-8 mr-3 border rounded-full p-1 shadow shadow-white" src="/images/logo.jpg" alt="" />
+          David.Riley.Dev@gmail.com
+        </div>
+      </a>
+
+      {showScrollButton && (
+        <>
+       <div className="fixed top-6 right-9 mr-10 z-50">
+            <div className={`menu-btn ${showMenu ? "active" : ""}`} onClick={toggleMenu}>
+              <div className="menu-btn-burger"></div>
+            </div>
+          </div>
+
+          <div onClick={toggleMenu} className={`${showMenu ? "active" : ""}`}>
+            <div className={`sliding-menu ${showMenu ? "fixed" : "absolute"} right-0 flex justify-center items-center w-screen h-screen bg-[#121212] z-40`}>
+              <p>{navElements}</p>
+            </div>
+          </div>
+        
+      </>
+      )}
+
+      {window.innerWidth < 1024 ? (
+        <>
+          <div className="absolute top-6 right-9 mr-10 z-50">
+            <div className={`menu-btn ${showMenuSmall ? "active" : ""}`} onClick={toggleMenu}>
+              <div className="menu-btn-burger"></div>
+            </div>
+          </div>
+
+          <div onClick={toggleMenu} className={`${showMenuSmall ? "active" : ""}`}>
+            <div className={`sliding-menu ${showMenuSmall ? "fixed" : "absolute"} right-0 flex justify-center items-center w-screen h-screen bg-[#121212] z-40`}>
+              {navElements}
+            </div>
+          </div>
+        </>
+      ) : (
+        <div>
+          {navElements}
+        </div>
+      )}
+    </header>
+  );
+};
+
+export default Nav;

@@ -55,8 +55,12 @@
     transition: background 0.7s;
   }
   
-
   .visit-site:hover {
     background-position: 0 0;
+  }
+
+  .project-card {
+    opacity: 0;
+    transition: opacity 2s ease;
   }
   
