@@ -9,17 +9,17 @@ const Projects = () => {
     
       const [ref2, inView2] = useInView({
         triggerOnce: true,
-        threshold: 0.2, // Adjust the threshold as needed
+        threshold: 0.2, 
       });
     
       const [ref3, inView3] = useInView({
         triggerOnce: true,
-        threshold: 0.2, // Adjust the threshold as needed
+        threshold: 0.2, 
       });
     
       const [ref4, inView4] = useInView({
         triggerOnce: true,
-        threshold: 0.2, // Adjust the threshold as needed
+        threshold: 0.2, 
       });
 
       console.log("inView1:", inView1);

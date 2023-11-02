@@ -1,5 +1,5 @@
 .image-container {
-    border-radius: 50%; /* Create a circular border */
+    border-radius: 50%;
     animation: borderRadiusAnimation 20s infinite;
 }
 
@@ -12,7 +12,7 @@
 
 .hero {
     opacity: 0;
-    transition: opacity 3s ease-in-out; /* You can adjust the duration and easing function */
+    transition: opacity 3s ease-in-out; 
   }
 
 
