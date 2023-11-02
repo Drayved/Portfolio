@@ -5,8 +5,8 @@ const Nav = () => {
   const [showMenu, setShowMenu] = useState(false)
   const [showScrollButton, setShowScrollButton] = useState(false);
 
-  const scrollToSection = (event: React.MouseEvent, sectionId: string) => {
-    event.preventDefault();
+  const scrollToSection = (sectionId: string) => {
+    
     const section = document.querySelector(sectionId);
     if (section) {
       section.scrollIntoView({
@@ -33,33 +33,59 @@ const Nav = () => {
     };
   }, []);
 
-  const toggleMenu = () => {
-    setShowMenuSmall(!showMenuSmall);
-    setShowMenu(!showMenu)
-
-    if (!showMenu) {
-      document.body.classList.add("no-scroll");
-    } else {
-      document.body.classList.remove("no-scroll");
+  const toggleMenu = (e: React.MouseEvent) => {
+    const isNavButton = e.target instanceof Element && e.target.closest(".nav-btn");
+    const isMenuButton = e.target instanceof Element && e.target.closest(".menu-btn");
+  
+    if (isNavButton || isMenuButton) {
+      setShowMenuSmall(!showMenuSmall);
+      setShowMenu(!showMenu);
+  
+      if (!showMenu) {
+        document.body.classList.add("no-scroll");
+      } else {
+        document.body.classList.remove("no-scroll");
+      }
     }
+  
+    // Stop event propagation to prevent clicks on the background from triggering nav elements
+    e.stopPropagation();
   };
 
   const navElements = (
-    <ul className={`p-6 font-semibold  ${showMenuSmall || showMenu ? 'flex flex-row gap-6 text-lg' : 'hidden'} ${window.innerWidth < 1024 || showMenu ? 'flex-col flex gap-10 mb-10 text-2xl' : ''}`}>
-      <li className="cursor-pointer hover:text-cyan-500">
-        <a href="#home" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</a>
+    <ul 
+      className={`p-6 font-semibold  
+        ${showMenuSmall || showMenu 
+        ? 'flex flex-row gap-6 text-lg' 
+        : 'hidden'} 
+        ${window.innerWidth < 1024 || showMenu ? 'flex-col flex gap-10 mb-10 text-2xl' : ''}`}>
+      <li className="nav-btn cursor-pointer hover:text-cyan-500">
+        <a href="#home" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+          Home
+        </a>
       </li>
-      <li className="cursor-pointer hover:text-cyan-500">
-        <a href="#about" onClick={(e) => scrollToSection(e, "#about")}>About</a>
+      <li className="nav-btn cursor-pointer hover:text-cyan-500">
+        <a href="#about" onClick={() => scrollToSection("#about")}>
+          About
+        </a>
       </li>
-      <li className="cursor-pointer hover:text-cyan-500">
-        <a href="#projects" onClick={(e) => scrollToSection(e, "#projects")}>Projects</a>
+      <li className="nav-btn cursor-pointer hover:text-cyan-500">
+        <a href="#projects" onClick={() => scrollToSection("#projects")}>
+          Projects
+        </a>
       </li>
-      <li className="cursor-pointer hover:text-cyan-500">
-        <a href="#contact" onClick={(e) => scrollToSection(e, "#contact")}>Contact</a>
+      <li className="nav-btn cursor-pointer hover:text-cyan-500">
+        <a href="#contact" onClick={() => scrollToSection("#contact")}>
+          Contact
+        </a>
       </li>
-      <li className="cursor-pointer hover:text-cyan-500">
-        <a href="https://docs.google.com/document/d/1K-TI-o4oTf1njuind_5i-n4trzjysyPxSXZN1UVnSz4/edit?usp=sharing" target="_blank">Resume</a>
+      <li className="nav-btn cursor-pointer hover:text-cyan-500">
+        <a 
+          href="https://docs.google.com/document/d/1K-TI-o4oTf1njuind_5i-n4trzjysyPxSXZN1UVnSz4/edit?usp=sharing" 
+          target="_blank"
+        >
+          Resume
+        </a>
       </li>
     </ul>
   );
