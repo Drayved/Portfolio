@@ -2,16 +2,37 @@ import { useInView } from 'react-intersection-observer';
 
 const Projects = () => {
 
-    const [ref, inView] = useInView({
+    const [ref1, inView1] = useInView({
         triggerOnce: true,
+        
       });
+    
+      const [ref2, inView2] = useInView({
+        triggerOnce: true,
+        threshold: 0.2, // Adjust the threshold as needed
+      });
+    
+      const [ref3, inView3] = useInView({
+        triggerOnce: true,
+        threshold: 0.2, // Adjust the threshold as needed
+      });
+    
+      const [ref4, inView4] = useInView({
+        triggerOnce: true,
+        threshold: 0.2, // Adjust the threshold as needed
+      });
+
+      console.log("inView1:", inView1);
+console.log("inView2:", inView2);
+console.log("inView3:", inView3);
+console.log("inView4:", inView4);
 
 
     return (
-        <section id="projects" ref={ref} className={`section w-full xl:w-[90%] flex flex-col items-center mx-auto mt-52 ${inView ? 'visible' : ''}`}>
+        <section id="projects"  className={` w-full xl:w-[90%] flex flex-col items-center mx-auto mt-52 `}>
             <h1 className="text-2xl text-cyan-500 font-semibold">PROJECTS</h1>
             {/* First card */}
-            <div className="mt-10 shadow p-5 rounded-2xl  max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto">
+            <div ref={ref1} className={`project mt-10 shadow p-5 rounded-2xl max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto ${inView1 ? 'visible' : ''}`}>
 
                 <div className={`project-image-container xl:min-w-[550px] rounded-lg h-[25rem]  mx-auto xl:h-auto`}>
                     <div className="overlay bg-[#121212] opacity-20 hover:opacity-0 w-full h-full"></div>
@@ -49,7 +70,7 @@ const Projects = () => {
             </div>
 
             {/* Second card */}
-            <div className="mt-10 shadow p-5 rounded-2xl  max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto">
+            <div ref={ref2} className={`project mt-10 shadow p-5 rounded-2xl max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto ${inView2 ? 'visible' : ''}`}>
 
             <div className={`project-image-container-2 xl:min-w-[550px] rounded-lg h-[25rem] order-2 mx-auto xl:h-auto`}>
                     <div className="overlay bg-[#121212] opacity-20 hover:opacity-0 w-full h-full"></div>
@@ -89,7 +110,7 @@ const Projects = () => {
 
             {/* Third card */}
 
-            <div className="mt-10 shadow p-5 rounded-2xl  max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto">
+            <div ref={ref3} className={`project mt-10 shadow p-5 rounded-2xl max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto ${inView3 ? 'visible' : ''}`}>
 
                 <div className={`project-image-container-3 xl:min-w-[550px] rounded-lg h-[25rem]  mx-auto xl:h-auto`}>
                     <div className="overlay bg-[#121212] opacity-20 hover:opacity-0 w-full h-full"></div>
@@ -129,7 +150,7 @@ const Projects = () => {
 
             {/* fourth card */}
 
-            <div className="mt-10 shadow p-5 rounded-2xl  max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto">
+            <div ref={ref4} className={`project mt-10 shadow p-5 rounded-2xl max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto ${inView4 ? 'visible' : ''}`}>
             
             <div className={`project-image-container-4 xl:min-w-[550px] rounded-lg  h-[25rem] order-2  mx-auto xl:h-auto`}>
                 <div className="overlay bg-[#121212] opacity-20 hover:opacity-0 w-full h-full"></div>

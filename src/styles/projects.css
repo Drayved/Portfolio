@@ -1,63 +1,66 @@
 .project-image-container {
-    background-image: url('/images/car-rental.png');
-    background-size: cover;
-    background-position: top;
-    background-color: black;
-  }
+  background-image: url('/images/car-rental.png');
+  background-size: cover;
+  background-position: top;
+  background-color: black;
+}
 
-  .project-image-container-2 {
-    background-image: url('/images/gamesaver.png');
-    background-size: cover;
-    background-position: top;
-    background-color: black;
-  }
+.project-image-container-2 {
+  background-image: url('/images/gamesaver.png');
+  background-size: cover;
+  background-position: top;
+  background-color: black;
+}
 
-  .project-image-container-2:hover{
-    background-image: url('/images/gamesaver-2.png');
-    transition: ease-in-out 2s;
-  }
+.project-image-container-2:hover{
+  background-image: url('/images/gamesaver-2.png');
+  transition: ease-in-out 2s;
+}
 
-  .project-image-container-3 {
-    background-image: url('/images/tint-site.png');
-    background-size: cover;
-    background-position: top;
-    background-color: black;
-  }
+.project-image-container-3 {
+  background-image: url('/images/tint-site.png');
+  background-size: cover;
+  background-position: top;
+  background-color: black;
+}
 
-  .project-image-container-4 {
-    background-image: url('/images/skyfall.jpg');
-    background-size: cover;
-    background-position: center;
-    background-color: black;
-  }
+.project-image-container-4 {
+  background-image: url('/images/skyfall.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+}
 
-  .project-image-container-4:hover{
-    background-image: url('/images/skyfall-2.jpg');
-    transition: ease-in-out 1s;
-  }
+.project-image-container-4:hover{
+  background-image: url('/images/skyfall-2.jpg');
+  transition: ease-in-out 1s;
+}
 
-  .project-image-container:hover,
-  .project-image-container-3:hover{
-    background-position: bottom;
-    transition: ease-in-out 10s;
-  }
-  
-  .visit-site {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff; /* Text color */
-    text-decoration: none;
-    position: relative;
-    overflow: hidden;
-    background: linear-gradient(to right, cyan 10%, #121212 50%); 
-    background-size: 200% 100%;
-    background-position: 100% 0;
-    transition: background 0.7s;
-  }
-  
-  .visit-site:hover {
-    background-position: 0 0;
-  }
+.project-image-container:hover,
+.project-image-container-3:hover{
+  background-position: bottom;
+  transition: ease-in-out 10s;
+}
 
+.visit-site {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff; /* Text color */
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, cyan 10%, #121212 50%); 
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  transition: background 0.7s;
+}
 
+.visit-site:hover {
+  background-position: 0 0;
+}
+
+.project {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
   

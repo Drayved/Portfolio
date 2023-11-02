@@ -45,7 +45,7 @@ const Nav = () => {
   };
 
   const navElements = (
-    <ul className={`p-6 font-semibold ${showMenuSmall || showMenu ? 'flex flex-row gap-6 text-lg' : 'hidden'} ${window.innerWidth < 1024 || showMenu ? 'flex-col flex gap-10 mb-10 text-2xl' : ''}`}>
+    <ul className={`p-6 font-semibold  ${showMenuSmall || showMenu ? 'flex flex-row gap-6 text-lg' : 'hidden'} ${window.innerWidth < 1024 || showMenu ? 'flex-col flex gap-10 mb-10 text-2xl' : ''}`}>
       <li className="cursor-pointer hover:text-cyan-500">
         <a href="#home" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>Home</a>
       </li>
@@ -76,7 +76,7 @@ const Nav = () => {
       {showScrollButton && (
         <>
        <div className="fixed top-6 right-9 mr-10 z-50">
-            <div className={`menu-btn ${showMenu ? "active" : ""}`} onClick={toggleMenu}>
+            <div className={`menu-btn  ${showMenu ? "active" : ""}`} onClick={toggleMenu}>
               <div className="menu-btn-burger"></div>
             </div>
           </div>
