@@ -47,8 +47,7 @@ const Nav = () => {
         document.body.classList.remove("no-scroll");
       }
     }
-  
-    // Stop event propagation to prevent clicks on the background from triggering nav elements
+
     e.stopPropagation();
   };
 
