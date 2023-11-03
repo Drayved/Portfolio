@@ -91,16 +91,22 @@ const Nav = () => {
 
   return (
     <header id="home" className="flex justify-between border-b">
-      <a href="mailto:David.Riley.Dev@gmail.com" className="p-6 font-bold text-gray-100 sm:text-lg hover:text-cyan-500 cursor-pointer text-sm">
-        <div className="flex text-lg">
-          <img className="w-8 mr-3 border rounded-full p-1 shadow shadow-white" src="/images/logo.jpg" alt="" />
-          David.Riley.Dev@gmail.com
+      <a href="mailto:David.Riley.Dev@gmail.com" className="p-6 font-bold text-gray-100 sm:text-lg  cursor-pointer text-sm">
+        <div className="flex">
+          <div className="logo-img hover:scale-105">
+            <img className="w-8 mr-3 border rounded-full p-1 shadow shadow-white " src="/images/logo.jpg" alt="" />
+            <div className="email-tag sm:hidden">Email</div>
+          </div>
+          <div className="flex text-lg hover:text-cyan-500">
+            <p className="hidden sm:flex">David.Riley.Dev@gmail.com</p>
+          </div>
         </div>
+        
       </a>
 
       {showScrollButton && (
         <>
-       <div className="fixed top-6 right-9 mr-10 z-50">
+       <div className="fixed top-6 right-4 mr-10 z-50">
             <div className={`menu-btn  ${showMenu ? "active" : ""}`} onClick={toggleMenu}>
               <div className="menu-btn-burger"></div>
             </div>
@@ -117,7 +123,7 @@ const Nav = () => {
 
       {window.innerWidth < 1024 ? (
         <>
-          <div className="absolute top-6 right-9 mr-10 z-50">
+          <div className="absolute top-6 right-4 mr-10 z-50">
             <div className={`menu-btn ${showMenuSmall ? "active" : ""}`} onClick={toggleMenu}>
               <div className="menu-btn-burger"></div>
             </div>

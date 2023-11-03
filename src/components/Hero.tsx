@@ -12,7 +12,7 @@ const Hero = () => {
                 <div className=" md:flex">
                     <div className="image-container flex justify-center my-10">
                         <div className="border-container ">
-                            <img className="image w-96 md:-mt-16 md:w-80 2xl:w-[28rem] 2xl:-mt-10 2xl:h-[28rem] rounded-full  " src="/images/my-pic.jpg" alt="" />
+                            <img className="image w-72 md:-mt-16 sm:w-80 2xl:w-[25rem] 2xl:-mt-10 2xl:h-[28rem] rounded-full  " src="/images/my-pic.jpg" alt="" />
                         </div>
                         
                     </div>
