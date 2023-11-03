@@ -16,7 +16,7 @@ const Hero = () => {
                         </div>
                         
                     </div>
-                    <div className="ml-10">
+                    <div className="sm:ml-10 px-4">
                         <h1 className="text-cyan-600 font-semibold 2xl:text-lg">Hi, my name is</h1>
                         <h1 className="text-5xl 2xl:text-7xl mt-2 font-semibold">David Riley</h1>
                         <h2 className="text-5xl 2xl:text-7xl mt-2 text-gray-400 font-semibold">Front-End Developer</h2>
@@ -40,8 +40,8 @@ const Hero = () => {
             
             
            
-            <div className="flex flex-col md:flex-row mt-16 flex-wrap px-10 mx-auto">
-                <h4 className="flex mx-auto mt-2 text-lg 2xl:text-2xl font-bold pl-4 pr-5 border-b pb-1 mb-4 md:border-none md:pb-0 md:mb-0">
+            <div className="flex flex-col md:flex-row mt-16 flex-wrap px-4 mx-auto">
+                <h4 className="flex mx-auto mt-2 text-lg 2xl:text-2xl font-bold md:pl-4 md:pr-5 border-b pb-1 mb-4 md:border-none md:pb-0 md:mb-0">
                     Tech Stack 
                     <span className="text-xl -mt-0.5 ml-4 hidden md:flex 2xl:text-2xl ">|</span>
                 </h4>

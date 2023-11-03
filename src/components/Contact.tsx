@@ -7,10 +7,10 @@ const Contact = () => {
       });
 
     return(
-        <section id='contact' ref={ref} className={`section mt-32 px-5 w-full flex flex-col items-center ${inView ? 'visible' : ''}`}>
+        <section id='contact' ref={ref} className={`section mt-32 px-4 w-full flex flex-col items-center ${inView ? 'visible' : ''}`}>
             <div>
                 <h1 className="text-4xl text-cyan-500 text-center">Get In Touch</h1>
-                <p className="mt-10 px-6 lg:max-w-[1200px] lg:text-center text-gray-400">
+                <p className="mt-10  lg:max-w-[1200px] lg:text-center text-gray-400">
                     If you need a top-notch, user-friendly website to showcase your business or product, 
                     I've got you covered! Don't hesitate to get in touch, and I'll do my utmost to respond 
                     as quickly as possible. Drop me an email for the fastest and most efficient communication.
