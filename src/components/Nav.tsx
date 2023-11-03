@@ -80,7 +80,7 @@ const Nav = () => {
       </li>
       <li className="nav-btn cursor-pointer hover:text-cyan-500">
         <a 
-          href="https://docs.google.com/document/d/1K-TI-o4oTf1njuind_5i-n4trzjysyPxSXZN1UVnSz4/edit?usp=sharing" 
+          href="https://docs.google.com/document/d/1LrrNYW7TJ7JSdLVynRL4VGzmreRLG2wFWPCyWKNyksQ/edit?usp=sharing" 
           target="_blank"
         >
           Resume
