@@ -57,7 +57,7 @@ const Nav = () => {
         ${showMenuSmall || showMenu 
         ? 'flex flex-row gap-6 text-lg' 
         : 'hidden'} 
-        ${window.innerWidth < 1024 || showMenu ? 'flex-col flex gap-10 mb-10 text-2xl' : ''}`}>
+        ${window.innerWidth < 1024 || showMenu ? 'flex-col flex gap-10 mb-10 text-3xl' : ''}`}>
       <li className="nav-btn cursor-pointer hover:text-cyan-500">
         <a href="#home" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           Home
