@@ -21,7 +21,7 @@ body{
 }
 
 .btn-hover {
-  background: linear-gradient(to right, #37c4e7 10%, #121212 50%); 
+  background: linear-gradient(to right, cyan 10%, #121212 50%); 
   background-size: 200% 100%;
   background-position: 100% 0;
   transition: background 0.7s;
@@ -31,4 +31,7 @@ body{
   background-position: 0 0;
 }
 
-
+.particle-canvas {
+  position: fixed;
+  @apply w-screen;
+}

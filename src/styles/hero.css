@@ -1,13 +1,13 @@
 .image-container {
     border-radius: 50%;
-    animation: borderRadiusAnimation 20s infinite;
+    animation: borderRadiusAnimation 50s infinite;
 }
 
 .image {
     overflow: hidden;
-    animation: borderRadiusAnimation 20s infinite;
+    animation: borderRadiusAnimation 40s infinite;
     border: 3px solid white;
-    max-height: 20rem;
+    max-height: 22rem;
 }
 
 .hero {
@@ -16,59 +16,27 @@
   }
 
 
-@keyframes borderRadiusAnimation {
+  @keyframes borderRadiusAnimation {
     0% {
-        border-radius: 50% 50% 50% 50%;
+        border-radius: 50% 70% 70% 50%;
     }
-    12.5% {
-        border-radius: 50% 60% 50% 50%;
-    }
-    25% {
-        border-radius: 50% 50% 40% 50%;
-    }
-    37.5% {
-        border-radius: 50% 40% 30% 50%;
-    }
-    50% {
+    20% {
         border-radius: 50% 45% 35% 50%;
     }
-    62.5% {
-        border-radius: 50% 50% 40% 50%;
-    }
-    75% {
+    40% {
         border-radius: 50% 60% 50% 50%;
     }
-    87.5% {
-        border-radius: 50% 70% 60% 50%;
+    60% {
+        border-radius: 50% 40% 30% 50%;
+    }
+    80% {
+        border-radius: 50% 50% 40% 50%;
     }
     100% {
         border-radius: 50% 70% 70% 50%;
     }
-    87.5% {
-        border-radius: 50% 70% 60% 50%;
-    }
-    75% {
-        border-radius: 50% 60% 50% 50%;
-    }
-    62.5% {
-        border-radius: 50% 50% 40% 50%;
-    }
-    50% {
-        border-radius: 50% 45% 35% 50%;
-    }
-    37.5% {
-        border-radius: 50% 40% 30% 50%;
-    }
-    25% {
-        border-radius: 50% 50% 40% 50%;
-    }
-    12.5% {
-        border-radius: 50% 60% 50% 50%;
-    }
-    0% {
-        border-radius: 50% 50% 50% 50%;
-    }
 }
+
 
 .image-container {
     position: relative;
@@ -92,6 +60,13 @@
 
 .image-container:hover .tag {
     opacity: 1; 
+}
+
+@media(max-width:359px){
+    .image {
+        max-width: 17rem;
+        max-height: 17rem;
+    }
 }
 
 

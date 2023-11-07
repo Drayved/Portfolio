@@ -12,20 +12,20 @@ const Hero = () => {
                 <div className=" md:flex">
                     <div className="image-container flex justify-center my-10">
                         <div className="border-container ">
-                            <img className="image w-[20rem] md:-mt-16 sm:w-80 2xl:w-[25rem] 2xl:-mt-10 2xl:h-[28rem] rounded-full  " src="/images/my-pic.jpg" alt="" />
+                            <img className="image w-[20rem] md:-mt-16 sm:w-80 2xl:w-[24rem] 2xl:-mt-10 2xl:h-[28rem] rounded-full  " src="/images/my-pic.jpg" alt="" />
                         </div>
                         
                     </div>
                     <div className="sm:ml-10 px-4">
-                        <h1 className="text-cyan-600 font-semibold 2xl:text-lg">Hi, my name is</h1>
+                        <h1 className="text-[#00ffffb9] font-semibold 2xl:text-lg ml-1">Hi, my name is</h1>
                         <h1 className="text-5xl 2xl:text-7xl mt-2 font-semibold">David Riley</h1>
                         <h2 className="text-5xl 2xl:text-7xl mt-2 text-gray-400 font-semibold">Front-End Developer</h2>
-                        <p className="max-w-20 md:w-96 mt-4 2xl:text-xl text-gray-500 flex">
+                        <p className="max-w-20 md:w-96 mt-4 2xl:text-xl text-gray-500 flex ml-1">
                             I transform web designs into seamless, user-friendly experiences.
                             Let's create something remarkable together.
                         </p>
 
-                        <div className="flex gap-5 mt-5">
+                        <div className="flex gap-5 mt-5 ml-1">
                             <a className="hover:scale-110" href="https://www.linkedin.com/in/david-riley-dev/" target="_blank">
                                 <img className="w-8" src="/images/linkedin.svg" alt="" />
                             </a>
@@ -45,7 +45,7 @@ const Hero = () => {
                     Tech Stack 
                     <span className="text-xl -mt-0.5 ml-4 hidden md:flex 2xl:text-2xl ">|</span>
                 </h4>
-                <div className="flex flex-wrap justify-start gap-2">
+                <div className="flex flex-wrap justify-center gap-2">
                     <div className="image-container">
                         <img className="hover:scale-110" src="/images/html.png" alt="HTML" />
                         <div className="tag">HTML</div>

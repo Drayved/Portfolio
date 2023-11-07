@@ -9,7 +9,7 @@ const About = () => {
     return(
         <section id='about' ref={ref} className={`section flex flex-col lg:flex-row mt-60 md:mt-[35rem] items-center justify-center w-[90%] max-w-[1150px] mx-auto ${inView ? 'visible' : ''}`}>
             <div className="lg:max-w-[500px] mx-auto text-lg">
-                <h1 className="text-2xl font-semibold text-cyan-500 text-center">ABOUT ME</h1>
+                <h1 className="text-2xl font-semibold text-[#00ffffb9] text-center">ABOUT ME</h1>
                 <p className="mt-5 text-gray-400">
                     Hello! My name is David and I am a
                     Front-End Developer from Kentucky. I enjoy crafting intuitive 

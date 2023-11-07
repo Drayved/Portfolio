@@ -58,27 +58,27 @@ const Nav = () => {
         ? 'flex flex-row gap-6 text-lg' 
         : 'hidden'} 
         ${window.innerWidth < 1024 || showMenu ? 'flex-col flex gap-10 mb-10 text-3xl' : ''}`}>
-      <li className="nav-btn cursor-pointer hover:text-cyan-500">
+      <li className="nav-btn cursor-pointer hover:text-[#00ffffb9]">
         <a href="#home" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           Home
         </a>
       </li>
-      <li className="nav-btn cursor-pointer hover:text-cyan-500">
+      <li className="nav-btn cursor-pointer hover:text-[#00ffffb9]">
         <a href="#about" onClick={() => scrollToSection("#about")}>
           About
         </a>
       </li>
-      <li className="nav-btn cursor-pointer hover:text-cyan-500">
+      <li className="nav-btn cursor-pointer hover:text-[#00ffffb9]">
         <a href="#projects" onClick={() => scrollToSection("#projects")}>
           Projects
         </a>
       </li>
-      <li className="nav-btn cursor-pointer hover:text-cyan-500">
+      <li className="nav-btn cursor-pointer hover:text-[#00ffffb9]">
         <a href="#contact" onClick={() => scrollToSection("#contact")}>
           Contact
         </a>
       </li>
-      <li className="nav-btn cursor-pointer hover:text-cyan-500">
+      <li className="nav-btn cursor-pointer hover:text-[#00ffffb9]">
         <a 
           href="https://drive.google.com/file/d/1XRTq0z1twZzGAU4037Lt9AQh2O5w_zR2/view?usp=sharing" 
           target="_blank"
@@ -97,7 +97,7 @@ const Nav = () => {
             <img className="w-8 mr-3 border rounded-full p-1 shadow shadow-white " src="/images/logo.jpg" alt="" />
             <div className="email-tag sm:hidden">Email</div>
           </div>
-          <div className="flex text-lg hover:text-cyan-500">
+          <div className="flex text-lg hover:text-[#00ffffb9]">
             <p className="hidden sm:flex">David.Riley.Dev@gmail.com</p>
           </div>
         </div>

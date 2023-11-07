@@ -22,17 +22,12 @@ const Projects = () => {
         threshold: 0.2, 
       });
 
-      console.log("inView1:", inView1);
-console.log("inView2:", inView2);
-console.log("inView3:", inView3);
-console.log("inView4:", inView4);
-
 
     return (
         <section id="projects"  className={` w-full xl:w-[90%] flex flex-col items-center mx-auto mt-52 `}>
-            <h1 className="text-2xl text-cyan-500 font-semibold">PROJECTS</h1>
+            <h1 className="text-2xl text-[#00ffffb9] font-semibold">PROJECTS</h1>
             {/* First card */}
-            <div ref={ref1} className={`project mt-10 shadow p-5 rounded-2xl max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto ${inView1 ? 'visible' : ''}`}>
+            <div ref={ref1} className={`bg-[#121212] project mt-10 shadow p-5 rounded-2xl max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto ${inView1 ? 'visible' : ''}`}>
 
                 <div className={`project-image-container xl:min-w-[550px] rounded-lg h-[25rem]  mx-auto xl:h-auto`}>
                     <div className="overlay bg-[#121212] opacity-20 hover:opacity-0 w-full h-full"></div>
@@ -44,7 +39,7 @@ console.log("inView4:", inView4);
                         This project is a template for a car rental website, showcasing the 
                         integration of various technologies and functionalities. Users can register
                         and log in using Firebase authentication, browse available cars, view car 
-                        details, and make reservations. The site is responsive with a sleek and modern design
+                        details, and make reservations. The site is responsive with a sleek and modern design.
                         It's a fully functional web application 
                         designed to serve as a starting point for real-world projects.
                     </p>
@@ -70,7 +65,7 @@ console.log("inView4:", inView4);
             </div>
 
             {/* Second card */}
-            <div ref={ref2} className={`project mt-10 shadow p-5 rounded-2xl max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto ${inView2 ? 'visible' : ''}`}>
+            <div ref={ref2} className={`bg-[#121212] project mt-10 shadow p-5 rounded-2xl max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto ${inView2 ? 'visible' : ''}`}>
 
             <div className={`project-image-container-2 xl:min-w-[550px] rounded-lg h-[25rem] order-2 mx-auto xl:h-auto`}>
                     <div className="overlay bg-[#121212] opacity-20 hover:opacity-0 w-full h-full"></div>
@@ -80,8 +75,8 @@ console.log("inView4:", inView4);
                 <h1 className="mt-5 font-semibold text-xl">GameSaver</h1>
                 <p className="mt-5 text-lg text-gray-400"> 
                     An app to find games you want to play or games you've played and keep track of them in 2 different list.
-                    Game you want to play and games you have played. Utlizes the RAWR API for all game data.
-                    Users are able to create an account and access their list on any device. Utlizies firebase database
+                    Utlizes the RAWG API for all game data.
+                    Users are able to create an account and access their list on any device. Utlizies firebase
                     to keep track of the users and their specifc list. Fun design that fits perfectly on any screen without needing
                     to scroll. Uses a serverless function to hide API key.
                 </p>
@@ -110,7 +105,7 @@ console.log("inView4:", inView4);
 
             {/* Third card */}
 
-            <div ref={ref3} className={`project mt-10 shadow p-5 rounded-2xl max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto ${inView3 ? 'visible' : ''}`}>
+            <div ref={ref3} className={`bg-[#121212] project mt-10 shadow p-5 rounded-2xl max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto ${inView3 ? 'visible' : ''}`}>
 
                 <div className={`project-image-container-3 xl:min-w-[550px] rounded-lg h-[25rem]  mx-auto xl:h-auto`}>
                     <div className="overlay bg-[#121212] opacity-20 hover:opacity-0 w-full h-full"></div>
@@ -124,7 +119,7 @@ console.log("inView4:", inView4);
                         due to franchise requirements, the site showcases a professional 
                         and visually appealing design. This project was to enhance my 
                         skills with Responsive Design, Form Submission, and Google Maps 
-                        Integration. Form is connected to a google spreadsheet, so all customer information is neatly organized.
+                        Integration. Form is connected to a Google spreadsheet, so all customer information is neatly organized.
                         Modern design that would enhance any business. 
                     </p>
                     
@@ -150,7 +145,7 @@ console.log("inView4:", inView4);
 
             {/* fourth card */}
 
-            <div ref={ref4} className={`project mt-10 shadow p-5 rounded-2xl max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto ${inView4 ? 'visible' : ''}`}>
+            <div ref={ref4} className={`bg-[#121212] project mt-10 shadow p-5 rounded-2xl max-w-[90%] xl:h-[29rem] xl:max-w-[1200px] xl:flex mx-auto ${inView4 ? 'visible' : ''}`}>
             
             <div className={`project-image-container-4 xl:min-w-[550px] rounded-lg  h-[25rem] order-2  mx-auto xl:h-auto`}>
                 <div className="overlay bg-[#121212] opacity-20 hover:opacity-0 w-full h-full"></div>
