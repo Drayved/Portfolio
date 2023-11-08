@@ -8,15 +8,15 @@ const Hero = () => {
 
 
     return (
-        <section ref={ref} className={`hero flex flex-wrap flex-col md:items-center justify-center mt-5 md:mt-60 2xl:mt-96 w-[99%] mx-auto ${inView ? 'visible' : ''}`}>
+        <section ref={ref} className={`hero flex flex-wrap flex-col md:items-center justify-center mt-5 md:mt-60 2xl:mt-80 w-[99%] mx-auto ${inView ? 'visible' : ''}`}>
                 <div className=" md:flex">
-                    <div className="image-container flex justify-center my-10">
+                    <div className="image-container flex justify-center my-10 ">
                         <div className="border-container ">
-                            <img className="image w-[20rem] md:-mt-16 sm:w-80 2xl:w-[24rem] 2xl:-mt-10 2xl:h-[28rem] rounded-full  " src="/images/my-pic.jpg" alt="" />
+                            <img className="image w-[20rem] md:-mt-16 2xl:w-[23rem] 2xl:-mt-10 2xl:h-[22rem] rounded-full  " src="/images/my-pic.jpg" alt="" />
                         </div>
                         
                     </div>
-                    <div className="sm:ml-10 px-4">
+                    <div className="sm:ml-10 px-4 bg-[#121212]">
                         <h1 className="text-[#00ffffb9] font-semibold 2xl:text-lg ml-1">Hi, my name is</h1>
                         <h1 className="text-5xl 2xl:text-7xl mt-2 font-semibold">David Riley</h1>
                         <h2 className="text-5xl 2xl:text-7xl mt-2 text-gray-400 font-semibold">Front-End Developer</h2>

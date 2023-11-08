@@ -8,7 +8,7 @@ const Contact = () => {
 
     return(
         <section id='contact' ref={ref} className={`section mt-32 px-4 w-full flex flex-col items-center ${inView ? 'visible' : ''}`}>
-            <div>
+            <div className='bg-[#121212]'>
                 <h1 className="text-4xl text-[#00ffffb9] text-center">Get In Touch</h1>
                 <p className="mt-10  lg:max-w-[1200px] lg:text-center text-gray-400">
                     If you need a top-notch, user-friendly website to showcase your business or product, 

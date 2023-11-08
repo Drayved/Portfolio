@@ -5,9 +5,9 @@
 
 .image {
     overflow: hidden;
-    animation: borderRadiusAnimation 40s infinite;
+    animation: borderRadiusAnimation 30s infinite;
     border: 3px solid white;
-    max-height: 22rem;
+    height: 20rem;
 }
 
 .hero {

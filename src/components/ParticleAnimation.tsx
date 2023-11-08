@@ -9,7 +9,7 @@ const ParticleAnimation: React.FC = () => {
 
     if (!container) return;
 
-    const particleNum = 20;
+    const particleNum = 12;
 
     for (let i = 0; i < particleNum; i++) {
       const particle = document.createElement('div');

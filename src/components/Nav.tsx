@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import ParticleAnimation from "./ParticleAnimation";
 
 const Nav = () => {
   const [showMenuSmall, setShowMenuSmall] = useState(window.innerWidth >= 1024);
@@ -80,7 +81,7 @@ const Nav = () => {
       </li>
       <li className="nav-btn cursor-pointer hover:text-[#00ffffb9]">
         <a 
-          href="https://drive.google.com/file/d/1XRTq0z1twZzGAU4037Lt9AQh2O5w_zR2/view?usp=sharing" 
+          href="https://drive.google.com/file/d/1ZZPKJepZDTfVRfCDmZXqAHmIHjBFGEjO/view?usp=sharing" 
           target="_blank"
         >
           Resume
@@ -114,6 +115,7 @@ const Nav = () => {
 
           <div onClick={toggleMenu} className={`${showMenu ? "active" : ""}`}>
             <div className={`sliding-menu ${showMenu ? "fixed" : "absolute"} right-0 flex justify-center items-center w-screen h-screen bg-[#121212] z-40`}>
+            {showMenu && <div className="absolute top-0 left-0"><ParticleAnimation /></div>}
               <p>{navElements}</p>
             </div>
           </div>
@@ -129,9 +131,10 @@ const Nav = () => {
             </div>
           </div>
 
-          <div onClick={toggleMenu} className={`${showMenuSmall ? "active" : ""}`}>
-            <div className={`sliding-menu ${showMenuSmall ? "fixed" : "absolute"} right-0 flex justify-center items-center w-screen h-screen bg-[#121212] z-40`}>
-              {navElements}
+          <div onClick={toggleMenu} className={`${showMenu ? "active" : ""}`}>
+            <div className={`sliding-menu fixed right-0 flex justify-center items-center w-screen h-screen bg-[#121212] z-40`}>
+              {showMenu && <div className="absolute top-0 left-0"><ParticleAnimation /></div>}
+              <p>{navElements}</p>
             </div>
           </div>
         </>

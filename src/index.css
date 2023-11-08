@@ -35,3 +35,33 @@ body{
   position: fixed;
   @apply w-screen;
 }
+
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00ffffb9; 
+  border-radius: 6px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00ffff; 
+}
+
+::-webkit-scrollbar-track {
+  background: #121212; 
+}
+
+::-webkit-scrollbar-button {
+  display: none; 
+}
+
+* {
+  scrollbar-width: thin; 
+  scrollbar-color: #121212 #00ffffb9; 
+}
+
+*:hover {
+  scrollbar-color: #1a1a1a #00ffff; 
+}
