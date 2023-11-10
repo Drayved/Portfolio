@@ -81,7 +81,7 @@ const Nav = () => {
       </li>
       <li className="nav-btn cursor-pointer hover:text-[#00ffffb9]">
         <a 
-          href="https://drive.google.com/file/d/1ZZPKJepZDTfVRfCDmZXqAHmIHjBFGEjO/view?usp=sharing" 
+          href="https://drive.google.com/file/d/1OuN8aMd8LGDZmaFBo8E-j_kctr5uDP3Q/view?usp=sharing" 
           target="_blank"
         >
           Resume
